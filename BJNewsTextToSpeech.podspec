@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "BJNewsTextToSpeech/BJNewsTextToSpeech/BJNewsTextToSpeech/*"
+  s.source_files  = "BJNewsTextToSpeech/*"
 
 
   s.frameworks  = "UIKit","AVFoundation","Foundation"
