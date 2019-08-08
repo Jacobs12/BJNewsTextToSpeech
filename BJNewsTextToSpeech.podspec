@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BJNewsTextToSpeech"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A short description of BJNewsTextToSpeech.ss"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Jacobs12/BJNewsTextToSpeech.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/Jacobs12/BJNewsTextToSpeech.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "BJNewsTextToSpeech/*"
+  s.source_files  = "JDTTS/**/*"
 
 
   s.frameworks  = "UIKit","AVFoundation","Foundation"
