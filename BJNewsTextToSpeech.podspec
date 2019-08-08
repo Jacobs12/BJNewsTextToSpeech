@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "BJNewsTextToSpeech"
   s.version      = "1.0.2"
-  s.summary      = "this is jdtts"
+  s.summary      = "this is jdtts "
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-这是京东语音合成的sdk
+             这是京东语音合成的sdk This description is used to generate tags and improve search results.
                    DESC
 
   s.homepage     = "https://github.com/Jacobs12/BJNewsTextToSpeech"
@@ -82,22 +82,15 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Jacobs12/BJNewsTextToSpeech.git", :tag => "1.0.2" }
 
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
 #需要包含的源文件
-s.source_files = 'JDTTS/JD_Speech.framework/Headers/*.{h}'
+s.source_files = 'JDTTS/*.{h}'
 
 #你的SDK路径
 s.vendored_frameworks = 'JDTTS/JD_Speech.framework'
 
 #SDK头文件路径
-s.public_header_files = 'JDTTS/JD_Speech.framework/Headers/JDAISSpeechManager.h'
+#s.public_header_files = 'JDTTS/JD_Speech.framework/Headers/JDAISSpeechManager.h'
+
+s.frameworks  = "UIKit","AVFoundation","Foundation"
 
 end
